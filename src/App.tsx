@@ -1,6 +1,6 @@
 import { Show, createSignal } from "solid-js";
 import type { Component } from "solid-js";
-import clickOutside from "./directives/click-outside.tsx";
+import clickOutside from "./directives/click-outside";
 
 // uncomment this block to make it work
 // import { onCleanup } from "solid-js";

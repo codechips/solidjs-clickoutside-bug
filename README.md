@@ -6,6 +6,16 @@ Getting `Uncaught TypeError: accessor is not a function` when clicking outside t
 
 It works fine if I put the directive function in the component file where it is used.
 
+## Problem solved!
+
+See here: https://github.com/solidjs/solid/issues/569
+
+**TL;DR**
+
+If it's not a component don't use `.jsx` or `.tsx`, but `.js` or `*.ts`.
+
+Also, if using directives make sure to add `onlyRemoveTypeImports` option to Solid plugin config. See below.
+
 ## Install Log
 
 ```text
